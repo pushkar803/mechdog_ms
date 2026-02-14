@@ -1,0 +1,21 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 200
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_group_position_controller:
+      type: position_controllers/JointGroupPositionController
+
+joint_group_position_controller:
+  ros__parameters:
+    joints:
+      - fl_hip_joint
+      - fl_knee_joint
+      - fr_hip_joint
+      - fr_knee_joint
+      - rl_hip_joint
+      - rl_knee_joint
+      - rr_hip_joint
+      - rr_knee_joint

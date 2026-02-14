@@ -1,0 +1,4 @@
+source;share/mechdog_description/local_setup.bash
+source;share/mechdog_description/local_setup.dsv
+source;share/mechdog_description/local_setup.sh
+source;share/mechdog_description/local_setup.zsh

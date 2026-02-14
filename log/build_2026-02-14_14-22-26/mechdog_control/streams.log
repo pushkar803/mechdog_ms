@@ -1,0 +1,41 @@
+[0.017s] Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_control
+[0.131s] -- The C compiler identification is GNU 13.3.0
+[0.213s] -- The CXX compiler identification is GNU 13.3.0
+[0.228s] -- Detecting C compiler ABI info
+[0.281s] -- Detecting C compiler ABI info - done
+[0.286s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.286s] -- Detecting C compile features
+[0.287s] -- Detecting C compile features - done
+[0.292s] -- Detecting CXX compiler ABI info
+[0.350s] -- Detecting CXX compiler ABI info - done
+[0.355s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.355s] -- Detecting CXX compile features
+[0.355s] -- Detecting CXX compile features - done
+[0.365s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.458s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.577s] -- Configuring done (0.5s)
+[0.578s] -- Generating done (0.0s)
+[0.579s] -- Build files have been written to: /home/ps/core_work/mechdog_ws/build/mechdog_control
+[0.582s] Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_control
+[0.583s] Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_control -- -j6 -l6
+[0.608s] Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_control -- -j6 -l6
+[0.614s] Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_control
+[0.618s] -- Install configuration: ""
+[0.618s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/config
+[0.618s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/config/controllers.yaml
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/package_run_dependencies/mechdog_control
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/parent_prefix_path/mechdog_control
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/ament_prefix_path.sh
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/ament_prefix_path.dsv
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/path.sh
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/path.dsv
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.bash
+[0.619s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.sh
+[0.620s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.zsh
+[0.620s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.dsv
+[0.620s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.dsv
+[0.620s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/packages/mechdog_control
+[0.621s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/cmake/mechdog_controlConfig.cmake
+[0.621s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/cmake/mechdog_controlConfig-version.cmake
+[0.621s] -- Installing: /home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.xml
+[0.623s] Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_control

@@ -1,0 +1,8 @@
+source;share/mechdog_gazebo/hook/cmake_prefix_path.ps1
+source;share/mechdog_gazebo/hook/cmake_prefix_path.dsv
+source;share/mechdog_gazebo/hook/cmake_prefix_path.sh
+source;share/mechdog_gazebo/local_setup.bash
+source;share/mechdog_gazebo/local_setup.dsv
+source;share/mechdog_gazebo/local_setup.ps1
+source;share/mechdog_gazebo/local_setup.sh
+source;share/mechdog_gazebo/local_setup.zsh

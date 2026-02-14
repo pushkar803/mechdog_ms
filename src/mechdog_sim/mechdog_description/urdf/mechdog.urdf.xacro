@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<robot name="mechdog" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ===== Dimensions (meters) ===== -->
+  <xacro:property name="body_l" value="0.22"/>
+  <xacro:property name="body_w" value="0.12"/>
+  <xacro:property name="body_h" value="0.05"/>
+
+  <xacro:property name="hip_offset_x" value="0.09"/>  <!-- front/back from center -->
+  <xacro:property name="hip_offset_y" value="0.07"/>  <!-- left/right -->
+  <xacro:property name="hip_offset_z" value="0.0"/>
+
+  <xacro:property name="thigh_l" value="0.08"/>
+  <xacro:property name="shank_l" value="0.10"/>
+  <xacro:property name="leg_r" value="0.012"/>
+
+  <!-- ===== Mass (kg) ===== -->
+  <xacro:property name="mass_body" value="1.8"/>
+  <xacro:property name="mass_thigh" value="0.14"/>
+  <xacro:property name="mass_shank" value="0.12"/>
+  <xacro:property name="mass_foot" value="0.03"/>
+
+  <!-- ===== Contact tuning ===== -->
+  <xacro:property name="foot_mu" value="2.2"/>
+  <xacro:property name="foot_kp" value="180000"/>
+  <xacro:property name="foot_kd" value="55"/>
+
+  <!-- ===== Joint dynamics ===== -->
+  <xacro:property name="joint_damping" value="0.8"/>
+  <xacro:property name="joint_friction" value="0.25"/>
+
+  <!-- ===== Helpers ===== -->
+  <xacro:macro name="inertial_box" params="mass x y z">
+    <inertial>
+      <mass value="${mass}"/>
+      <inertia ixx="${mass*(y*y+z*z)/12.0}"
+               iyy="${mass*(x*x+z*z)/12.0}"
+               izz="${mass*(x*x+y*y)/12.0}"
+               ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_cyl" params="mass r l">
+    <inertial>
+      <mass value="${mass}"/>
+      <inertia ixx="${(mass*(3*r*r + l*l))/12.0}"
+               iyy="${(mass*(3*r*r + l*l))/12.0}"
+               izz="${(mass*r*r)/2.0}"
+               ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- ===== base_link ===== -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${body_h/2}" rpy="0 0 0"/>
+      <geometry><box size="${body_l} ${body_w} ${body_h}"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${body_h/2}" rpy="0 0 0"/>
+      <geometry><box size="${body_l} ${body_w} ${body_h}"/></geometry>
+    </collision>
+    <xacro:inertial_box mass="${mass_body}" x="${body_l}" y="${body_w}" z="${body_h}"/>
+  </link>
+
+  <!-- ===== One leg macro ===== -->
+  <!-- side: +1 left, -1 right ; front: +1 front, -1 rear -->
+  <xacro:macro name="leg" params="prefix side front">
+
+    <link name="${prefix}_thigh">
+      <visual>
+        <origin xyz="0 0 ${-thigh_l/2}" rpy="0 0 0"/>
+        <geometry><cylinder radius="${leg_r}" length="${thigh_l}"/></geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${-thigh_l/2}" rpy="0 0 0"/>
+        <geometry><cylinder radius="${leg_r}" length="${thigh_l}"/></geometry>
+      </collision>
+      <xacro:inertial_cyl mass="${mass_thigh}" r="${leg_r}" l="${thigh_l}"/>
+    </link>
+
+    <link name="${prefix}_shank">
+      <visual>
+        <origin xyz="0 0 ${-shank_l/2}" rpy="0 0 0"/>
+        <geometry><cylinder radius="${leg_r}" length="${shank_l}"/></geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${-shank_l/2}" rpy="0 0 0"/>
+        <geometry><cylinder radius="${leg_r}" length="${shank_l}"/></geometry>
+      </collision>
+      <xacro:inertial_cyl mass="${mass_shank}" r="${leg_r}" l="${shank_l}"/>
+    </link>
+
+    <link name="${prefix}_foot">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><sphere radius="${leg_r*1.25}"/></geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><sphere radius="${leg_r*1.25}"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="${mass_foot}"/>
+        <inertia ixx="3e-5" iyy="3e-5" izz="3e-5" ixy="0" ixz="0" iyz="0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}_hip_joint" type="revolute">
+      <parent link="base_link"/>
+      <child link="${prefix}_thigh"/>
+      <origin xyz="${front*hip_offset_x} ${side*hip_offset_y} ${hip_offset_z + body_h/2}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.4" upper="1.4" effort="6" velocity="6"/>
+      <dynamics damping="${joint_damping}" friction="${joint_friction}"/>
+    </joint>
+
+    <joint name="${prefix}_knee_joint" type="revolute">
+      <parent link="${prefix}_thigh"/>
+      <child link="${prefix}_shank"/>
+      <origin xyz="0 0 ${-thigh_l}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-2.2" upper="0.15" effort="6" velocity="6"/>
+      <dynamics damping="${joint_damping}" friction="${joint_friction}"/>
+    </joint>
+
+    <joint name="${prefix}_ankle_fixed" type="fixed">
+      <parent link="${prefix}_shank"/>
+      <child link="${prefix}_foot"/>
+      <origin xyz="0 0 ${-shank_l}" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Foot contact/friction tuning -->
+    <gazebo reference="${prefix}_foot">
+      <mu1>${foot_mu}</mu1>
+      <mu2>${foot_mu}</mu2>
+      <kp>${foot_kp}</kp>
+      <kd>${foot_kd}</kd>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- 4 legs -->
+  <xacro:leg prefix="fl" side="1"  front="1"/>
+  <xacro:leg prefix="fr" side="-1" front="1"/>
+  <xacro:leg prefix="rl" side="1"  front="-1"/>
+  <xacro:leg prefix="rr" side="-1" front="-1"/>
+
+  <!-- ROS2 control wiring for Gazebo -->
+  <ros2_control name="MechDogSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <joint name="fl_hip_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="fl_knee_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="fr_hip_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="fr_knee_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="rl_hip_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rl_knee_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="rr_hip_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rr_knee_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo ros2_control plugin -->
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find mechdog_control)/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>

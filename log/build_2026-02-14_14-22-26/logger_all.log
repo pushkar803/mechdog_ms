@@ -1,0 +1,289 @@
+[0.133s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.133s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xe59e41f0f710>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xe59e41f0f260>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xe59e41f0f260>>)
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ps/core_work/mechdog_ws'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_control) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mechdog_sim/mechdog_control' with type 'ros.ament_cmake' and name 'mechdog_control'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_description) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mechdog_sim/mechdog_description' with type 'ros.ament_cmake' and name 'mechdog_description'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechdog_sim/mechdog_gazebo) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mechdog_sim/mechdog_gazebo' with type 'ros.ament_cmake' and name 'mechdog_gazebo'
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ps/core_work/mechdog_ws/install/mechdog_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ps/core_work/mechdog_ws/install/mechdog_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ps/core_work/mechdog_ws/install/mechdog_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.245s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ps/core_work/mechdog_ws/install/mechdog_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ps/core_work/mechdog_ws/install
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 369 installed packages in /opt/ros/jazzy
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'mechdog_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ps/core_work/mechdog_ws/build/mechdog_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ps/core_work/mechdog_ws/install/mechdog_control', 'merge_install': False, 'path': '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control', 'symlink_install': False, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'mechdog_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ps/core_work/mechdog_ws/build/mechdog_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ps/core_work/mechdog_ws/install/mechdog_description', 'merge_install': False, 'path': '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_description', 'symlink_install': False, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'mechdog_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'mechdog_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo', 'merge_install': False, 'path': '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.275s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control' with build type 'ament_cmake'
+[0.276s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control'
+[0.288s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.290s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_description' with build type 'ament_cmake'
+[0.290s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_description'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_control
+[0.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_description -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_description
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_control -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_control
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_control -- -j6 -l6
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_description -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_description
+[0.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_description -- -j6 -l6
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_control -- -j6 -l6
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_control
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_description -- -j6 -l6
+[0.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_description
+[0.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_control)
+[0.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_control
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control' for CMake module files
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control' for CMake config files
+[0.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_control', 'cmake_prefix_path')
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.ps1'
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.sh'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/bin'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/lib/pkgconfig/mechdog_control.pc'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/lib/python3.12/site-packages'
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/bin'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.ps1'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.dsv'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.sh'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.bash'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.zsh'
+[0.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_control/share/colcon-core/packages/mechdog_control)
+[0.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_control)
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control' for CMake module files
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control' for CMake config files
+[0.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_control', 'cmake_prefix_path')
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.ps1'
+[0.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.dsv'
+[0.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/hook/cmake_prefix_path.sh'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/bin'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/lib/pkgconfig/mechdog_control.pc'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/lib/python3.12/site-packages'
+[0.912s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_control/bin'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.ps1'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.dsv'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.sh'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.bash'
+[0.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.zsh'
+[0.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_control/share/colcon-core/packages/mechdog_control)
+[0.913s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_description)
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description' for CMake module files
+[0.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_description
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description' for CMake config files
+[0.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_description', 'cmake_prefix_path')
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.ps1'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.sh'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/bin'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/lib/pkgconfig/mechdog_description.pc'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/lib/python3.12/site-packages'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/bin'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.ps1'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.sh'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.bash'
+[0.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.zsh'
+[0.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_description/share/colcon-core/packages/mechdog_description)
+[0.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_description)
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description' for CMake module files
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description' for CMake config files
+[0.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_description', 'cmake_prefix_path')
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.ps1'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.dsv'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/hook/cmake_prefix_path.sh'
+[0.921s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/bin'
+[0.921s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/lib/pkgconfig/mechdog_description.pc'
+[0.921s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/lib/python3.12/site-packages'
+[0.921s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_description/bin'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.dsv'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.sh'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.bash'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.zsh'
+[0.922s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_description/share/colcon-core/packages/mechdog_description)
+[0.922s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_gazebo' with build type 'ament_cmake'
+[0.922s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_gazebo'
+[0.922s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.922s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_gazebo -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_gazebo
+[1.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ps/core_work/mechdog_ws/src/mechdog_sim/mechdog_gazebo -DCMAKE_INSTALL_PREFIX=/home/ps/core_work/mechdog_ws/install/mechdog_gazebo
+[1.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_gazebo -- -j6 -l6
+[1.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ps/core_work/mechdog_ws/build/mechdog_gazebo -- -j6 -l6
+[1.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_gazebo
+[1.340s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_gazebo)
+[1.340s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' for CMake module files
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' for CMake config files
+[1.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ps/core_work/mechdog_ws/build/mechdog_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ps/core_work/mechdog_ws/install/mechdog_description:/home/ps/core_work/mechdog_ws/install/mechdog_control:/home/ps/core_work/mechdog_ws/install/mechdog_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ps/core_work/mechdog_ws/build/mechdog_gazebo
+[1.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_gazebo', 'cmake_prefix_path')
+[1.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.ps1'
+[1.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.dsv'
+[1.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.sh'
+[1.342s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/bin'
+[1.342s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/lib/pkgconfig/mechdog_gazebo.pc'
+[1.342s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/lib/python3.12/site-packages'
+[1.342s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/bin'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.ps1'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.dsv'
+[1.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.sh'
+[1.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.bash'
+[1.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.zsh'
+[1.343s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/colcon-core/packages/mechdog_gazebo)
+[1.343s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechdog_gazebo)
+[1.343s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' for CMake module files
+[1.343s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo' for CMake config files
+[1.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechdog_gazebo', 'cmake_prefix_path')
+[1.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.ps1'
+[1.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.dsv'
+[1.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/hook/cmake_prefix_path.sh'
+[1.344s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/bin'
+[1.344s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/lib/pkgconfig/mechdog_gazebo.pc'
+[1.344s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/lib/python3.12/site-packages'
+[1.344s] Level 1:colcon.colcon_core.environment:checking '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/bin'
+[1.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.ps1'
+[1.345s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.dsv'
+[1.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.sh'
+[1.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.bash'
+[1.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/mechdog_gazebo/package.zsh'
+[1.346s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ps/core_work/mechdog_ws/install/mechdog_gazebo/share/colcon-core/packages/mechdog_gazebo)
+[1.346s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.346s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.346s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.346s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.360s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.360s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.360s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.368s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.368s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ps/core_work/mechdog_ws/install/local_setup.ps1'
+[1.369s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ps/core_work/mechdog_ws/install/_local_setup_util_ps1.py'
+[1.370s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ps/core_work/mechdog_ws/install/setup.ps1'
+[1.370s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ps/core_work/mechdog_ws/install/local_setup.sh'
+[1.371s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ps/core_work/mechdog_ws/install/_local_setup_util_sh.py'
+[1.371s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ps/core_work/mechdog_ws/install/setup.sh'
+[1.371s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ps/core_work/mechdog_ws/install/local_setup.bash'
+[1.372s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ps/core_work/mechdog_ws/install/setup.bash'
+[1.372s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ps/core_work/mechdog_ws/install/local_setup.zsh'
+[1.373s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ps/core_work/mechdog_ws/install/setup.zsh'

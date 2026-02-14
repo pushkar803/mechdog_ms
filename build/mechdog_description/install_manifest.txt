@@ -1,0 +1,16 @@
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/urdf/mechdog.urdf.xacro
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/ament_index/resource_index/package_run_dependencies/mechdog_description
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/ament_index/resource_index/parent_prefix_path/mechdog_description
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/environment/ament_prefix_path.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/environment/ament_prefix_path.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/environment/path.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/environment/path.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/local_setup.bash
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/local_setup.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/local_setup.zsh
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/local_setup.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/ament_index/resource_index/packages/mechdog_description
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/cmake/mechdog_descriptionConfig.cmake
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/cmake/mechdog_descriptionConfig-version.cmake
+/home/ps/core_work/mechdog_ws/install/mechdog_description/share/mechdog_description/package.xml

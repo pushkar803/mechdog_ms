@@ -1,0 +1,1 @@
+controller_manager:gazebo_ros:gazebo_ros2_control:mechdog_control:mechdog_description:rclpy:robot_state_publisher:ros_gz_sim:std_msgs:xacro

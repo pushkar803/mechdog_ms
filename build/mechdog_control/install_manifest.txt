@@ -1,0 +1,16 @@
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/config/controllers.yaml
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/package_run_dependencies/mechdog_control
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/parent_prefix_path/mechdog_control
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/ament_prefix_path.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/ament_prefix_path.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/path.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/environment/path.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.bash
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.sh
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.zsh
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/local_setup.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.dsv
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/ament_index/resource_index/packages/mechdog_control
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/cmake/mechdog_controlConfig.cmake
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/cmake/mechdog_controlConfig-version.cmake
+/home/ps/core_work/mechdog_ws/install/mechdog_control/share/mechdog_control/package.xml
